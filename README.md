@@ -23,6 +23,7 @@ This yields highly structured generative trajectories where coarse features emer
 - **State-of-the-Art on MNIST**: Cold DBGM with FFT achieves FID 25.8 with only 15 NFE, outperforming standard Flow Matching
 
 ## 📁 Repository Structure
+```
 decomposition-regularized-diffusion/
 ├── fft_process_cold_diffusion.ipynb # FFT-based Cold DBGM (non-Markovian)
 ├── fft_process_markovian.ipynb # FFT-based Markovian DBGM
@@ -31,7 +32,7 @@ decomposition-regularized-diffusion/
 ├── svd_process_cold_diffusion.ipynb # SVD-based Cold DBGM on MNIST
 ├── svd_process_cold_diffusion_cifar10.ipynb # SVD-based Cold DBGM on CIFAR-10
 └── svd_process_markovian.ipynb # SVD-based Markovian DBGM
-
+```
 
 
 Reverting matrix decomposition for image generation
