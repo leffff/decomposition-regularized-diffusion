@@ -1,10 +1,26 @@
-# decomposition-regularized-diffusion
-
-[![Paper](https://img.shields.io/badge/Paper-ICML%20Style-blue)](https://github.com/leffff/decomposition-regularized-diffusion)
-[![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)](https://pytorch.org/)
+# ⚗️ Decomposition Regularized Diffusion
 
 A novel family of generative models that replaces noise-based corruption with structured matrix decompositions. Instead of adding Gaussian noise, we progressively corrupt images by discarding information along principled axes using **Singular Value Decomposition (SVD)** and **Fast Fourier Transform (FFT)**.
+
+| Model | Script | Notebook | Launch script |
+|-------|--------|----------|---------------|
+| DBGM FFT (CIFAR-10) | [fft_cifar_train.py](fft_cifar_train.py) | [fft_cifar_train.ipynb](fft_cifar_train.ipynb) | [scripts/fft_cifar_train.sh](scripts/fft_cifar_train.sh) |
+| Flow Matching (CIFAR-10) | [fm_cifar_train.py](fm_cifar_train.py) | — | [scripts/fm_cifar_train.sh](scripts/fm_cifar_train.sh) |
+| DBGM FFT Cold Diffusion | — | [fft_process_cold_diffusion.ipynb](fft_process_cold_diffusion.ipynb) | — |
+| DBGM FFT Markovian Diffusion | — | [fft_process_markovian.ipynb](fft_process_markovian.ipynb) | — |
+| DBGM SVD Cold Diffusion | — | [svd_process_cold_diffusion.ipynb](svd_process_cold_diffusion.ipynb) | — |
+| DBGM SVD Cold Diffusion (CIFAR-10) | — | [svd_process_cold_diffusion_cifar10.ipynb](svd_process_cold_diffusion_cifar10.ipynb) | — |
+| DBGM SVD Markovian Diffusion | — | [svd_process_markovian.ipynb](svd_process_markovian.ipynb) | — |
+| SNR-Aware FM + FFT Loss (MNIST) | — | [fm_mnist_fft_loss_v2.ipynb](fm_mnist_fft_loss_v2.ipynb) | — |
+| SNR-Aware FM + SVD Loss (MNIST) | — | [fm_mnist_svd_loss_v2.ipynb](fm_mnist_svd_loss_v2.ipynb) | — |
+
+## Evaluation
+
+| Script | Dataset | Models supported | Description |
+|--------|---------|-----------------|-------------|
+| [fid.py](fid.py) | MNIST (any two folders) | any | Computes FID between two image folders using `pytorch-fid`; saves results to CSV |
+| [fid_eval_cifar.py](fid_eval_cifar.py) | CIFAR-10 | `fft`, `fm`, `fm_x0` | Loads a UNet checkpoint, generates samples, and computes FID against the CIFAR-10 train set; see [scripts/eval.sh](scripts/eval.sh) for example invocations |
+
 
 ## 📖 Overview
 
