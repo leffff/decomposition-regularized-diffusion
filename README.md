@@ -9,3 +9,5 @@ SVD corruption
 ![fft](https://github.com/leffff/decomposition-regularized-diffusion/blob/main/assets/fft_process.png)
 FFT corruption
 
+
+![noise](https://github.com/leffff/decomposition-regularized-diffusion/blob/main/assets/fwd_bwd.png)
