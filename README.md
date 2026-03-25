@@ -62,3 +62,4 @@ def fft_truncate(image, t):
 # SNR-Aware Loss
 ![](https://github.com/leffff/decomposition-regularized-diffusion/blob/main/assets/snr_aware_svd.png)
 ![](https://github.com/leffff/decomposition-regularized-diffusion/blob/main/assets/snr_aware_fft.png)
+![](https://github.com/leffff/decomposition-regularized-diffusion/blob/main/assets/fid_sns_aware.png)
