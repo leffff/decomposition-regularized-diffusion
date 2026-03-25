@@ -6,8 +6,8 @@ Reverting matrix decomposition for image generation
 Noise corruption
 
 ```python
-def noise_truncate(x, noise, t):
-    return (1 - t) * x + (t) * noise
+def noise_truncate(x0, noise, t):
+    return (1 - t) * x0 + (t) * noise
 ```
 
 ![svd](https://github.com/leffff/decomposition-regularized-diffusion/blob/main/assets/svd_process.png)
