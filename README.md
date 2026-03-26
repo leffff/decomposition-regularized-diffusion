@@ -138,7 +138,7 @@ matplotlib
 📝 Citation
 @article{novitskiy2024decomposition,
   title={Decomposition-Based Generative Models},
-  author={Novitskiy, Lev and Varlamov, Alexander and Bogakovskaya, Sofiya},
+  author={Novitskiy, Lev and Varlamov, Alexander and Bogakovskaya, Sofiya and Kovaleva, Maria},
   year={2026}
 }
 
@@ -146,3 +146,4 @@ matplotlib
 [Lev Novitskiy](levnovitskiy@gmail.com)
 Alexander Varlamov
 Sofiya Bogakovskaya
+Maria Kovaleva
