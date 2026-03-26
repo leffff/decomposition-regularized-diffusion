@@ -116,34 +116,22 @@ def fft_truncate(image, t):
 ![](https://github.com/leffff/decomposition-regularized-diffusion/blob/main/assets/fid_sns_aware.png)
 
 ⚠️ Current Limitations
-Conditional generation: Deterministic priors retain class information, making class-agnostic sampling difficult
+* Conditional generation: Deterministic priors retain class information, making class-agnostic sampling difficult
+* Scaling to RGB: Complex priors on CIFAR-10 make prior distribution fitting (via GMM) challenging
+* SNR-Aware Loss on RGB: Selecting a single rank across multiple channels lacks theoretical foundation
 
-Scaling to RGB: Complex priors on CIFAR-10 make prior distribution fitting (via GMM) challenging
-
-SNR-Aware Loss on RGB: Selecting a single rank across multiple channels lacks theoretical foundation
-
-🛠️ Requirements
-Python 3.8+
-
-PyTorch 1.10+
-
-torchvision
-
-numpy
-
-scipy
-
-matplotlib
 
 📝 Citation
+```bibtex
 @article{novitskiy2024decomposition,
   title={Decomposition-Based Generative Models},
   author={Novitskiy, Lev and Varlamov, Alexander and Bogakovskaya, Sofiya and Kovaleva, Maria},
   year={2026}
 }
+```
 
-📧 Contact
-[Lev Novitskiy](levnovitskiy@gmail.com)
-Alexander Varlamov
-Sofiya Bogakovskaya
-Maria Kovaleva
+📧 Contact </br>
+[Lev Novitskiy](levnovitskiy@gmail.com) </br>
+Alexander Varlamov </br>
+Sofiya Bogakovskaya </br>
+Maria Kovaleva </br>
